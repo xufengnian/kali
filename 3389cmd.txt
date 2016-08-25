@@ -1,0 +1,4 @@
+管理员身份运行
+reg delete "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /F
+
+reg add    "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v fDenyTSConnections /t REG_DWORD /d 0
